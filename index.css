@@ -5,54 +5,6 @@
     font-family: Montserrat;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-section {
-	border-radius: 15px;
-}
-
-/* ── Navbar brand: gold shimmer ── */
-#logo {
-    color: #fbbf24 !important;
-    background: linear-gradient(90deg, #f59e0b, #fde047, #fbbf24, #f59e0b);
-    background-size: 300% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shimmer 4s linear infinite;
-    letter-spacing: 0.05em;
-    transition: transform 0.3s ease;
-}
-#logo:hover {
-    transform: scale(1.05);
-}
-
-.nav-link-light {
-    color: #ffedd5 !important;
-    position: relative;
-    transition: color 0.3s ease, transform 0.2s ease;
-}
-.nav-link-light::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: #fde047;
-    transition: width 0.3s ease, left 0.3s ease;
-}
-.nav-link-light:hover {
-    color: #fde047 !important;
-    transform: translateY(-2px);
-}
-.nav-link-light:hover::after {
-    width: 80%;
-    left: 10%;
-}
-
 /* ── Keyframes ── */
 @keyframes shimmer {
     0%   { background-position: 0% center; }
@@ -95,6 +47,54 @@ section {
     75%      { transform: rotate(8deg); }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+	border-radius: 15px;
+}
+
+/* ── Navbar brand ── */
+#logo {
+    color: #fbbf24 !important;
+    background: linear-gradient(90deg, #f59e0b, #fde047, #fbbf24, #f59e0b);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 4s linear infinite;
+    letter-spacing: 0.05em;
+    transition: transform 0.3s ease;
+}
+#logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-link-light {
+    color: #ffedd5 !important;
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+.nav-link-light::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #fde047;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.nav-link-light:hover {
+    color: #fde047 !important;
+    transform: translateY(-2px);
+}
+.nav-link-light:hover::after {
+    width: 80%;
+    left: 10%;
+}
+
 /* ── Landing section ── */
 #landing h1 {
     animation: fadeInLeft 0.8s ease-out both;
@@ -133,16 +133,6 @@ section {
     box-shadow: 0 0.5rem 1.5rem rgba(67, 20, 7, 0.35);
     transform: translateY(-4px);
 }
-#projects .col-11:nth-child(2)  .project-card { animation-delay: 0.05s; }
-#projects .col-11:nth-child(3)  .project-card { animation-delay: 0.10s; }
-#projects .col-11:nth-child(4)  .project-card { animation-delay: 0.15s; }
-#projects .col-11:nth-child(5)  .project-card { animation-delay: 0.20s; }
-#projects .col-11:nth-child(6)  .project-card { animation-delay: 0.25s; }
-#projects .col-11:nth-child(7)  .project-card { animation-delay: 0.30s; }
-#projects .col-11:nth-child(8)  .project-card { animation-delay: 0.35s; }
-#projects .col-11:nth-child(9)  .project-card { animation-delay: 0.40s; }
-#projects .col-11:nth-child(10) .project-card { animation-delay: 0.45s; }
-#projects .col-11:nth-child(11) .project-card { animation-delay: 0.50s; }
 
 /* ── Tech stack icons ── */
 .tool-icon {
@@ -171,7 +161,7 @@ section {
     transform: scale(1.01);
 }
 
-/* ── Footer pulse ── */
+/* ── Footer ── */
 #footer {
     animation: pulse-glow 3s ease-in-out infinite;
 }
@@ -247,3 +237,14 @@ section {
   --bs-btn-disabled-bg: #dc3545;
   --bs-btn-disabled-border-color: #dc3545;
 }
+
+#projects .col-11:nth-child(2)  .project-card { animation-delay: 0.05s; }
+#projects .col-11:nth-child(3)  .project-card { animation-delay: 0.10s; }
+#projects .col-11:nth-child(4)  .project-card { animation-delay: 0.15s; }
+#projects .col-11:nth-child(5)  .project-card { animation-delay: 0.20s; }
+#projects .col-11:nth-child(6)  .project-card { animation-delay: 0.25s; }
+#projects .col-11:nth-child(7)  .project-card { animation-delay: 0.30s; }
+#projects .col-11:nth-child(8)  .project-card { animation-delay: 0.35s; }
+#projects .col-11:nth-child(9)  .project-card { animation-delay: 0.40s; }
+#projects .col-11:nth-child(10) .project-card { animation-delay: 0.45s; }
+#projects .col-11:nth-child(11) .project-card { animation-delay: 0.50s; }
