@@ -111,7 +111,6 @@ section {
 }
 .about-photo {
     transform: rotate(-3deg);
-    box-shadow: 0 12px 40px rgba(124, 45, 18, 0.35);
     border-radius: 0.5rem;
     overflow: hidden;
     display: inline-block;
