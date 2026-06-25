@@ -109,9 +109,18 @@ section {
 #landing p + p {
     animation-delay: 0.45s;
 }
-#landing img {
+.about-photo {
+    transform: rotate(-3deg);
+    box-shadow: 0 12px 40px rgba(124, 45, 18, 0.35);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.about-photo img {
+    display: block;
     animation: fadeInRight 0.9s ease-out 0.2s both, float 4s ease-in-out 1.2s infinite;
-    box-shadow: 0 8px 30px rgba(124, 45, 18, 0.25);
 }
 
 /* ── Section headers ── */
