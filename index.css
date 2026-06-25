@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+section {
+	border-radius: 15px;
+}
+
+.bg-orange-body { background-color: #fff7ed; }
+.text-orange-body { color: #431407; }
+.bg-orange-cream { background-color: #ffedd5; }
+.bg-orange-dark { background-color: #7c2d12; }
+
+.text-orange-primary { color: #ea580c; }
+.text-orange-dark { color: #7c2d12; }
+
+.border-orange { border-color: #fdba74; opacity: 0.6; }
+
+.nav-link-orange { color: #7c2d12 !important; }
+.nav-link-orange:hover { color: #ea580c !important; }
+
+.nav-link-light { color: #ffedd5 !important; }
+.nav-link-light:hover { color: #fdba74 !important; }
+
+.btn-orange {
+    background-color: #ea580c;
+    color: #fff !important;
+    border: none;
+}
+.btn-orange:hover { background-color: #7c2d12; }
+
+#projects .card-img-top {
+    padding: 2rem;
+    max-height: 400px;
+}
+#projects .card-body {
+    padding: 2rem;
+}
+
+.project-card {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 0.25rem 0.75rem rgba(67, 20, 7, 0.15);
+}
+.project-card:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(67, 20, 7, 0.35);
+    transform: translateY(-4px);
+}
+
+.map-embed {
+    width: 90%;
+    aspect-ratio: 4 / 4;
+    min-height: 150px;
+    margin: 1rem;
+}
+
+.map-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (min-width: 768px) {
+  .md-rounded-circle {
+    border-radius: 50% !important;
+  }
+}
+
+.btn-orange-dark {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #7c2d12;
+  --bs-btn-border-color: #7c2d12;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: #ffedd5;
+  --bs-btn-hover-border-color: #7c2d12;
+  --bs-btn-focus-shadow-rgb: 225, 83, 97;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #7c2d12;
+  --bs-btn-active-border-color: #7c2d12;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #dc3545;
+  --bs-btn-disabled-border-color: #dc3545;
+}
