@@ -1,10 +1,24 @@
 (function () {
 	const carousel = document.getElementById('projectsCarousel');
 	const dotsContainer = document.getElementById('projectsCarouselDots');
-	if (!carousel) return;
+	const track = document.getElementById('projectsCarouselTrack');
+	if (!carousel || !track || typeof projects === 'undefined') return;
 
-	const track = carousel.querySelector('.projects-carousel-track');
-	const slides = [...carousel.querySelectorAll('.projects-carousel-slide')];
+	track.innerHTML = projects.map(function (project) {
+		return (
+			'<div class="projects-carousel-slide">' +
+				'<div class="card h-100 project-card">' +
+					'<img src="' + project.image + '" class="card-img-top img-fluid" alt="' + project.alt + '">' +
+					'<div class="card-body">' +
+						'<h3 class="card-title h5">' + project.title + '</h3>' +
+						'<p class="card-text">' + project.description + '</p>' +
+					'</div>' +
+				'</div>' +
+			'</div>'
+		);
+	}).join('');
+
+	const slides = [...track.querySelectorAll('.projects-carousel-slide')];
 	const prevBtn = document.querySelector('.projects-carousel-btn-prev');
 	const nextBtn = document.querySelector('.projects-carousel-btn-next');
 
